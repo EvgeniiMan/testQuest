@@ -1,0 +1,33 @@
+.products {
+    padding: 60px 80px 0;
+    test-align:center
+}
+
+.hidden{
+    display: none;
+}
+
+.product {
+    display: inline-block;
+    margin: 10px;
+    padding: 45px 0 0;
+    min-height: 200px;
+    width: 270px;
+    text-align: center;
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+
+.product img{
+    width: 150px;
+    height: 150px;
+}
+
+.product button{
+    text-align: center;
+    background-color: #333;
+    font-size: 16px;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+}

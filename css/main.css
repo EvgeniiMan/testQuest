@@ -1,0 +1,22 @@
+@import "header.css";
+@import "products.css";
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.btn-up{
+    position: fixed;
+    display: none;
+    cursor: pointer;
+    right: 20px;
+    bottom: 20px;
+    border: 1px solid rgba(0, 51, 153, 0.5);
+    background-color: rgba(0, 51, 153, 0.1);
+    padding: 15px 10px;
+}
+
+.btn-up--show {
+    display: block;
+}
