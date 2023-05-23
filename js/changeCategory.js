@@ -15,4 +15,9 @@ function changeCategory(type) {
             content[i].classList.add("hidden")
     }
     content[type-1].classList.remove("hidden");
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
 }

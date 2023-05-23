@@ -26,3 +26,15 @@
 .active{
     background-color: green;
 }
+
+footer{
+    background-color: darkgrey;
+    border: 3px solid white;
+}
+
+.footer_cat{
+    margin-bottom: 3px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
