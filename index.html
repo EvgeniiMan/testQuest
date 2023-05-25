@@ -12,6 +12,7 @@
         <li class="active" id="category1" onclick="changeCategory(1)">Категория 1</a></li>
         <li id="category2" onclick="changeCategory(2)">Категория 2</li>
         <li id="category3" onclick="changeCategory(3)">Категория 3</li>
+        <li style="float:right" onclick="changeTheme()" id="select-theme">☽</li>
     </ul>
 </header>
 
@@ -23,7 +24,7 @@
             <img src="img/насос.png">
             <h3>Название товара</h3>
             <p>Дата
-                <button>Купить</button></p>
+                <button onclick="showModalWin()">Купить</button></p>
         </div>
         <div class="product">
             <img src="img/насос.png">
@@ -369,6 +370,11 @@
         </div>
     </div>
 
+    <div class="modalwindow" id="popupWin">
+        fgjkdnernguijhdnbhghjkdbnzujkhfgnhdjhkzngjhkzdngfjkznfgkjznfdgkjzdfgnjkn
+        <p><button>Купить</button><button>Закрыть</button></p>
+    </div>
+
     <div class="btn-up">▲</div>
 </main>
 
@@ -384,5 +390,7 @@
 </body>
 <script src="js/btnUp.js"></script>
 <script src="js/changeCategory.js"></script>
+<script type="text/javascript" src="js/changeTheme.js"></script>
+<script type="text/javascript" src="js/buyItem.js"></script>
 
 </html>
