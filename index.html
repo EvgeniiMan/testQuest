@@ -8,371 +8,321 @@
 </head>
 <body>
 <header>
-    <ul id="navbar">
-        <li class="active" id="category1" onclick="changeCategory(1)">Категория 1</a></li>
-        <li id="category2" onclick="changeCategory(2)">Категория 2</li>
-        <li id="category3" onclick="changeCategory(3)">Категория 3</li>
-        <li style="float:right" onclick="changeTheme()" id="select-theme">☽</li>
+    <ul id="header-navbar" class="menu">
+        <li class="menu__el menu__el--active" id="category1" onclick="changeCategory(this, 1)">Категория 1</a></li>
+        <li class="menu__el" id="category2" onclick="changeCategory(this, 2)">Категория 2</li>
+        <li class="menu__el" id="category3" onclick="changeCategory(this, 3)">Категория 3</li>
+        <li class="menu__el menu__el--change-color" onclick="changeTheme()" id="select-theme">☽</li>
     </ul>
 </header>
 
 <main>
 
-    <div class="products type1">
+    <div class="products" data-category = "1">
+
         <h1>Категория 1</h1>
+
         <div class="product">
             <img src="img/насос.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button onclick="showModalWin()">Купить</button></p>
+            <h3>Название товара 1</h3>
+            <p class="product__date" data-date="01.01.2023"></p>
+            <button onclick="showModalWin()">Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
+            <h3>Название товара 2</h3>
+            <p class="product__date" data-date="15.01.2023"></p>
+            <button onclick="showModalWin()">Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
+            <h3>Название товара 3</h3>
+            <p class="product__date" data-date="30.01.2023"></p>
+            <button onclick="showModalWin()">Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
+            <h3>Название товара 4</h3>
+            <p class="product__date" data-date="01.02.2023"></p>
+            <button onclick="showModalWin()">Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
+            <h3>Название товара 5</h3>
+            <p class="product__date" data-date="15.02.2023"></p>
+            <button onclick="showModalWin()">Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
+            <h3>Название товара 6</h3>
+            <p class="product__date" data-date="27.02.2023"></p>
+            <button onclick="showModalWin()">Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
+            <h3>Название товара 7</h3>
+            <p class="product__date" data-date="01.03.2023"></p>
+            <button onclick="showModalWin()">Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
+            <h3>Название товара 8</h3>
+            <p class="product__date" data-date="15.03.2023"></p>
+            <button onclick="showModalWin()">Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
+            <h3>Название товара 9</h3>
+            <p class="product__date" data-date="27.03.2023"></p>
+            <button onclick="showModalWin()">Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
+            <h3>Название товара 10</h3>
+            <p class="product__date" data-date="01.04.2023"></p>
+            <button onclick="showModalWin()">Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
+            <h3>Название товара 11</h3>
+            <p class="product__date" data-date="15.04.2023"></p>
+            <button onclick="showModalWin()">Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
+            <h3>Название товара 12</h3>
+            <p class="product__date" data-date="25.04.2023"></p>
+            <button onclick="showModalWin()">Купить</button>
         </div>
-        <div class="product">
-            <img src="img/насос.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-        </div>
-        <div class="product">
-            <img src="img/насос.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-        </div>
-        <div class="product">
-            <img src="img/насос.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-        </div>
-        <div class="product">
-            <img src="img/насос.png">
-            <h3 style="border: black;">Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
-        </div>
-        <div class="product">
-            <img src="img/насос.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
-        </div>
-        <div class="product">
-            <img src="img/насос.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
-        </div>
-        <div class="product">
-            <img src="img/насос.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
-        </div>
-        <div class="product">
-            <img src="img/насос.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
-        </div>
-        <div class="product">
-            <img src="img/насос.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
-        </div>
-        <div class="product">
-            <img src="img/насос.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
-        </div>
-        <div class="product">
-            <img src="img/насос.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
-        </div>
-        <div class="product">
-            <img src="img/насос.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
-        </div>
+
     </div>
 
-    <div class="products type2 hidden">
+    <div class="products hidden" data-category = "2">
+
         <h1>Категория 2</h1>
+
         <div class="product">
             <img src="img/насос2.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
+            <h3>Название товара 1</h3>
+            <p class="product__date" data-date="01.04.2023"></p>
+            <button>Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос2.png">
-            <h3 style="border: black;">Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
+            <h3>Название товара 2</h3>
+            <p class="product__date" data-date="15.04.2023"></p>
+            <button>Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос2.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
+            <h3>Название товара 3</h3>
+            <p class="product__date" data-date="25.04.2023"></p>
+            <button>Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос2.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
+            <h3>Название товара 4</h3>
+            <p class="product__date" data-date="01.05.2023"></p>
+            <button>Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос2.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
+            <h3>Название товара 5</h3>
+            <p class="product__date" data-date="15.05.2023"></p>
+            <button>Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос2.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
+            <h3>Название товара 6</h3>
+            <p class="product__date" data-date="26.05.2023"></p>
+            <button>Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос2.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
+            <h3>Название товара 7</h3>
+            <p class="product__date" data-date="01.06.2023"></p>
+            <button>Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос2.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
+            <h3>Название товара 8</h3>
+            <p class="product__date" data-date="15.06.2023"></p>
+            <button>Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос2.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
+            <h3>Название товара 9</h3>
+            <p class="product__date" data-date="28.06.2023"></p>
+            <button>Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос2.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
+            <h3>Название товара 10</h3>
+            <p class="product__date" data-date="01.07.2023"></p>
+            <button>Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос2.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
+            <h3>Название товара 11</h3>
+            <p class="product__date" data-date="15.07.2023"></p>
+            <button>Купить</button>
         </div>
+
     </div>
 
-    <div class="products type3 hidden">
+    <div class="products hidden" data-category = "3">
+
         <h1>Категория 3</h1>
+
         <div class="product">
             <img src="img/насос3.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
+            <h3>Название товара 1</h3>
+            <p class="product__date" data-date="01.07.2023"></p>
+            <button>Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос3.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
+            <h3>Название товара 2</h3>
+            <p class="product__date" data-date="15.07.2023"></p>
+            <button>Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос3.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
+            <h3>Название товара 3</h3>
+            <p class="product__date" data-date="29.07.2023"></p>
+            <button>Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос3.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
+            <h3>Название товара 4</h3>
+            <p class="product__date" data-date="01.08.2023"></p>
+            <button>Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос3.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
+            <h3>Название товара 5</h3>
+            <p class="product__date" data-date="14.08.2023"></p>
+            <button>Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос3.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
+            <h3>Название товара 6</h3>
+            <p class="product__date" data-date="28.08.2023"></p>
+            <button>Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос3.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
+            <h3>Название товара 7</h3>
+            <p class="product__date" data-date="01.09.2023"></p>
+            <button>Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос3.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
+            <h3>Название товара 8</h3>
+            <p class="product__date" data-date="15.09.2023"></p>
+            <button>Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос3.png">
-            <h3 style="border: black;">Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
+            <h3>Название товара 9</h3>
+            <p class="product__date" data-date="27.09.2023"></p>
+            <button>Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос3.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
+            <h3>Название товара 10</h3>
+            <p class="product__date" data-date="01.10.2023"></p>
+            <button>Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос3.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
+            <h3>Название товара 11</h3>
+            <p class="product__date" data-date="15.10.2023"></p>
+            <button>Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос3.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
+            <h3>Название товара 12</h3>
+            <p class="product__date" data-date="28.10.2023"></p>
+            <button>Купить</button>
         </div>
+
         <div class="product">
             <img src="img/насос3.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
+            <h3>Название товара 13</h3>
+            <p class="product__date" data-date="01.11.2023"></p>
+            <button>Купить</button>
         </div>
-        <div class="product">
-            <img src="img/насос3.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
-        </div>
-        <div class="product">
-            <img src="img/насос3.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
-        </div>
-        <div class="product">
-            <img src="img/насос3.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
-        </div>
-        <div class="product">
-            <img src="img/насос3.png">
-            <h3>Название товара</h3>
-            <p>Дата
-                <button>Купить</button></p>
-            </p>
-        </div>
+
     </div>
 
-    <div class="modalwindow" id="popupWin">
-        fgjkdnernguijhdnbhghjkdbnzujkhfgnhdjhkzngjhkzdngfjkznfgkjznfdgkjzdfgnjkn
-        <p><button>Купить</button><button>Закрыть</button></p>
+    <div class="modal-window" id="popup_window">
+        <div class="modal-window__content">
+            <form onsubmit="formSubmit(event)">
+                <input type="text" min="0"  id="count" class="text-count" onkeypress="return onlyNumberKey(event)" placeholder="Количество предметов">
+
+                <fieldset class="set-color">
+                    <legend>Выберите цвет продукта</legend>
+
+                    <div>
+                        <input type="radio" id="black_color" value="black">
+                        <label for="black_color">Чёрный</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="white_color" value="white">
+                        <label for="white_color">Белый</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="blue_color" value="blue">
+                        <label for="blue_color">Синий</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="green_color" value="green">
+                        <label for="green_color">Зелёный</label>
+                    </div>
+                </fieldset>
+
+                <textarea maxlength="2000" class="comment" placeholder="Комментарий"></textarea><br>
+
+                <button type="submit">Купить</button>
+                <button type="button" onclick="closeWindow()">Закрыть</button>
+            </form>
+        </div>
     </div>
 
     <div class="btn-up">▲</div>
@@ -380,17 +330,19 @@
 
 <footer>
     <ul>
-        <li class="footer_cat" onclick="changeCategory(1)">Категория 1</li>
-        <li class="footer_cat" onclick="changeCategory(2)">Категория 2</li>
-        <li class="footer_cat" onclick="changeCategory(3)">Категория 3</li>
+        <li class="footer_cat" onclick="document.getElementById('category1').click()">Категория 1</li>
+        <li class="footer_cat" onclick="document.getElementById('category2').click()">Категория 2</li>
+        <li class="footer_cat" onclick="document.getElementById('category3').click()">Категория 3</li>
     </ul>
 </footer>
 
 
 </body>
-<script src="js/btnUp.js"></script>
-<script src="js/changeCategory.js"></script>
+
+<script type="text/javascript" src="js/btnUp.js"></script>
+<script type="text/javascript" src="js/changeCategory.js"></script>
 <script type="text/javascript" src="js/changeTheme.js"></script>
 <script type="text/javascript" src="js/buyItem.js"></script>
+<script type="text/javascript" src="js/getData.js"></script>
 
 </html>

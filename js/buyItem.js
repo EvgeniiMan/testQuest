@@ -1,15 +1,36 @@
 function showModalWin() {
 
-    var darkLayer = document.createElement('div'); // слой затемнения
-    darkLayer.id = 'shadow'; // id чтобы подхватить стиль
-    document.body.appendChild(darkLayer); // включаем затемнение
+    let darkLayer = document.createElement('div');
+    darkLayer.id = 'shadow';
+    document.body.appendChild(darkLayer);
 
-    var modalWin = document.getElementById('popupWin'); // находим наше "окно"
-    modalWin.style.display = 'block'; // "включаем" его
+    let modalWin = document.getElementById('popup_window');
+    modalWin.style.display = 'flex';
 
-    darkLayer.onclick = function () {  // при клике на слой затемнения все исчезнет
-        darkLayer.parentNode.removeChild(darkLayer); // удаляем затемнение
-        modalWin.style.display = 'none'; // делаем окно невидимым
+    darkLayer.onclick = function () {
+        darkLayer.parentNode.removeChild(darkLayer);
+        modalWin.style.display = 'none';
         return false;
     };
+}
+
+function onlyNumberKey(evt) {
+    let ASCIICode = (evt.which) ? evt.which : evt.keyCode
+    if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+    return false;
+    return true;
+}
+
+function formSubmit(evt) {
+    evt.preventDefault();
+    closeWindow();
+    setTimeout(() => { alert("Покупка совершена!") }, 100);
+    return false;
+}
+
+function closeWindow() {
+    let darkLayer = document.getElementById("shadow");
+    darkLayer.parentNode.removeChild(darkLayer);
+    document.getElementById("popup_window").style.display = 'none';
+
 }

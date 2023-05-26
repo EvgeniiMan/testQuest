@@ -1,38 +1,45 @@
-#navbar {
+.menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: darkgrey;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
-#navbar li{
-    float: left;
-}
 
-#navbar li{
+.menu__el {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
-
-#navbar li:hover{
-    background-color: black;
     cursor: pointer;
 }
 
-.active{
+.menu__el:hover {
+    background-color: black;
+}
+
+.menu__el--active {
     background-color: green;
 }
 
-footer{
+.menu__el--change-color {
+    margin-left: auto;
+}
+
+footer {
+
     background-color: darkgrey;
     border: 3px solid white;
 }
 
-.footer_cat{
+.footer_cat {
     margin-bottom: 3px;
     cursor: pointer;
     font-size: 20px;
